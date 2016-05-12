@@ -67,6 +67,7 @@ end
 #for production on Heroku
 group :production do
   gem 'rails_12factor'
+  gem 'puma'
 end
 
 ruby '2.2.1'
