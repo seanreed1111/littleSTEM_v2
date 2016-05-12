@@ -14,11 +14,10 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path, class:"page-scroll"%></li>
         <li><a href="#about-section" class="page-scroll">About</a></li>
-        <li><a href="#services-section" class="page-scroll">Services</a></li>
-        <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
+        <li><a href="#works-section" class="page-scroll">Portfolio</a></li> 
         <li><a href="#team-section" class="page-scroll">Team</a></li>
         <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li>
-        <li><a href="#contact-section" class="page-scroll">Contact</a></li>
+        <li><a href="#contact-section" class="page-scroll btn btn-primary">Buy a book!</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -87,166 +86,41 @@
   </div>
 </div>
 
-<!-- Services Section -->
-<div id="services-section" class="text-center">
-  <div class="container">
-    <div class="section-title center wow fadeInDown">
-      <h2>Our Services</h2>
-      <hr>
-      <div class="clearfix"></div>
-    </div>
-    <div class="row wow fadeInDown" data-wow-delay="200ms">
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-desktop"></i>
-        <h4>Web design</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-gears"></i>
-        <h4>App Development</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-pie-chart"></i>
-        <h4>Analytics</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-line-chart"></i>
-        <h4>Marketing</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
-      </div>
-    </div>
-    <div class="space"></div>
-    <div class="row wow fadeInDown" data-wow-delay="400ms">
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-shopping-cart"></i>
-        <h4>eCommerce</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-file-text-o"></i>
-        <h4>Content Development</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-rocket"></i>
-        <h4>Branding</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 service"> <i class="fa fa-camera"></i>
-        <h4>Video & Photography</h4>
-        <p>Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque.</p>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Portfolio Section -->
+<!-- Showcase of Books Section -->
 <div id="works-section">
   <div class="container"> <!-- Container -->
     <div class="section-title text-center wow fadeInDown">
-      <h2>Our Portfolio</h2>
+      <h2>Our Books</h2>
       <hr>
       <div class="clearfix"></div>
     </div>
-    <div class="categories wow fadeInDown">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".web">Web Design</a></li>
-            <li><a href="#" data-filter=".app">App Development</a></li>
-            <li><a href="#" data-filter=".branding">Branding</a></li>
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
   </div>
+
   <div class="container-fluid">
     <div class="row">
       <div class="portfolio-items">
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
+        <div class="col-sm-6 col-md-6 col-lg-6">
           <div class="portfolio-item wow fadeInDown" data-wow-delay="200ms">
             <div class="hover-bg"> <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <p>Web Design</p>
+                <h4>Serena Sees Her Footprints on the Moon</h4>
+                <p></p>
                 <div class="clearfix"></div>
               </div>
               <%= image_tag 'portfolio/01.jpg', class:"img-responsive", alt: "Project Title 1" %>
                </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
+        <div class="col-sm-6 col-md-6 col-lg-6">
           <div class="portfolio-item wow fadeInDown" data-wow-delay="400ms">
             <div class="hover-bg"> <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
               <div class="hover-text">
-                <h4>Project Title</h4>
-                <p>App Development</p>
+                <h4>Serena's Guide to the Bright Planets: Jupiter</h4>
+                <p></p>
                 <div class="clearfix"></div>
               </div>
               <%= image_tag 'portfolio/02.jpg', class:"img-responsive", alt: "Project Title 2" %> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item wow fadeInDown" data-wow-delay="600ms">
-            <div class="hover-bg"> <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <p>Web Design</p>
-                <div class="clearfix"></div>
-              </div>
-              <%= image_tag 'portfolio/03.jpg', class:"img-responsive", alt: "Project Title 3" %> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item wow fadeInDown" data-wow-delay="800ms">
-            <div class="hover-bg"> <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <p>Web Design</p>
-                <div class="clearfix"></div>
-                <i class="fa fa-plus"></i> </div>
-              <%= image_tag 'portfolio/04.jpg', class:"img-responsive", alt: "Project Title 4" %> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item wow fadeInDown" data-wow-delay="1000ms">
-            <div class="hover-bg"> <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <p>App Development</p>
-                <div class="clearfix"></div>
-              </div>
-              <%= image_tag 'portfolio/05.jpg', class:"img-responsive", alt: "Project Title 5" %> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding">
-          <div class="portfolio-item wow fadeInDown" data-wow-delay="1200ms">
-            <div class="hover-bg"> <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <p>Branding</p>
-                <div class="clearfix"></div>
-              </div>
-              <%= image_tag 'portfolio/06.jpg', class:"img-responsive", alt: "Project Title 6" %> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 branding app">
-          <div class="portfolio-item wow fadeInDown" data-wow-delay="1400ms">
-            <div class="hover-bg"> <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <p>App Development, Branding</p>
-                <div class="clearfix"></div>
-              </div>
-              <%= image_tag 'portfolio/07.jpg', class:"img-responsive", alt: "Project Title 7" %> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 web">
-          <div class="portfolio-item wow fadeInDown" data-wow-delay="1600ms">
-            <div class="hover-bg"> <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                <p>Web Design</p>
-                <div class="clearfix"></div>
-              </div>
-              <%= image_tag 'portfolio/08.jpg', class:"img-responsive", alt: "Project Title 8" %> </a> </div>
           </div>
         </div>
       </div>
@@ -353,44 +227,9 @@
 <div id="contact-section">
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
-      <h2>Contact us</h2>
+      <h2>Buy a book</h2>
       <hr>
       <div class="clearfix"></div>
-    </div>
-    <div class="col-md-4 wow fadeInDown" data-wow-delay="200ms">
-      <h3>Contact Info</h3>
-      <div class="space"></div>
-      <p><i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>321 Awesome Street<br>
-        New York, NY 17022</p>
-      <div class="space"></div>
-      <p><i class="fa fa-envelope-o fa-fw pull-left fa-2x"></i>info@companyname.com</p>
-      <div class="space"></div>
-      <p><i class="fa fa-phone fa-fw pull-left fa-2x"></i>+1 800 123 1234</p>
-    </div>
-    <div class="col-md-8 wow fadeInDown" data-wow-delay="200ms">
-      <h3>Leave us a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default">Send Message</button>
-      </form>
     </div>
   </div>
 </div>
@@ -410,7 +249,7 @@
 
 <div id="footer" class="text-center">
   <div class="container">
-    <p>Copyright &copy; littleSTEM Books. All rights reserved.</p>
+    <p>Copyright &copy; 2016 littleSTEM Books. All rights reserved.</p>
   </div>
 </div>
 
@@ -430,7 +269,7 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
             <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
+            <h2>Serena Sees Her Footprints on the Moon</h2>
             <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
               <%= image_tag 'portfolio/01-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 1" %>
             <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
@@ -445,6 +284,8 @@
     </div>
   </div>
 </div>
+
+
 <!-- Portfolio Modal 2 -->
 <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-content">
@@ -458,177 +299,9 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
             <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
+            <h2>Serena's Guide to the Bright Planets: Jupiter</h2>
             <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
               <%= image_tag 'portfolio/02-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 2" %>
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Portfolio Modal 3 -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl"> </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body"> 
-            <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <%= image_tag 'portfolio/03-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 3" %>
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Portfolio Modal 4 -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl"> </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body"> 
-            <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-              <%= image_tag 'portfolio/04-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 4" %>
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Portfolio Modal 5 -->
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl"> </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body"> 
-            <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-              <%= image_tag 'portfolio/05-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 5" %>
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Portfolio Modal 6 -->
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl"> </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body"> 
-            <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-              <%= image_tag 'portfolio/06-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 6" %>
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Portfolio Modal 7 -->
-<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl"> </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body"> 
-            <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-              <%= image_tag 'portfolio/07-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 7" %>
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Portfolio Modal 8 -->
-<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl"> </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body"> 
-            <!-- Project Details Go Here -->
-            <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <%= image_tag 'portfolio/08-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 8" %>
             <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
             <ul class="list-inline">
               <li><span>Client</span>: John Doe</li>
