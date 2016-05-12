@@ -48,6 +48,8 @@ end
 
 # gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
