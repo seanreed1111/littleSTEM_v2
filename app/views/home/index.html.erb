@@ -17,7 +17,7 @@
         <li><a href="#works-section" class="page-scroll">Portfolio</a></li> 
         <li><a href="#team-section" class="page-scroll">Team</a></li>
         <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li>
-        <li><a href="#contact-section" class="page-scroll btn btn-primary">Buy a book!</a></li>
+        <li><a href="#contact-section" class="page-scroll btn btn-default">Buy book!</a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -89,7 +89,7 @@
 
 <!-- Showcase of Books Section -->
 <div id="works-section">
-  <div class="container"> <!-- Container -->
+  <div class="container">
     <div class="section-title text-center wow fadeInDown">
       <h2>Our Books</h2>
       <hr>
@@ -100,33 +100,21 @@
   <div class="container-fluid">
     <div class="row">
       <div class="portfolio-items">
-        <div class="col-sm-6 col-md-6 col-lg-6">
           <div class="portfolio-item wow fadeInDown" data-wow-delay="200ms">
-            <div class="hover-bg"> <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text">
-                <h4>Serena Sees Her Footprints on the Moon</h4>
+            <div class="hover-bg container-fluid"> 
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+              <div class="hover-text text-center">
+                <h3>Serena Sees Her Footprints on the Moon</h3>
                 <p></p>
                 <div class="clearfix"></div>
               </div>
-              <%= image_tag 'portfolio/01.jpg', class:"img-responsive", alt: "Project Title 1" %>
-               </a> </div>
+              <%= image_tag 'portfolio/01.jpg', class:"center-block img-responsive", alt: "Project Title 1" %>
+            </a> </div>
           </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-6">
-          <div class="portfolio-item wow fadeInDown" data-wow-delay="400ms">
-            <div class="hover-bg"> <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text">
-                <h4>Serena's Guide to the Bright Planets: Jupiter</h4>
-                <p></p>
-                <div class="clearfix"></div>
-              </div>
-              <%= image_tag 'portfolio/02.jpg', class:"img-responsive", alt: "Project Title 2" %> </a> </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
-</div>
+/</div>
 
 <!-- Team Section -->
 <div id="team-section" class="text-center">
@@ -266,46 +254,19 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="center-block">
           <div class="modal-body"> 
             <!-- Project Details Go Here -->
             <h2>Serena Sees Her Footprints on the Moon</h2>
             <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
               <%= image_tag 'portfolio/01-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 1" %>
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
+            <p>
+            A young girl imagines a fun trip to the Moon, where she plays with some of the objects left
+            behind up there by the Apollo astronauts.
+            </p>
             <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Portfolio Modal 2 -->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl"> </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body"> 
-            <!-- Project Details Go Here -->
-            <h2>Serena's Guide to the Bright Planets: Jupiter</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-              <%= image_tag 'portfolio/02-preview.jpg', class:"img-responsive img-centered", alt: "portfolio preview 2" %>
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro graeco urbanitas reformidans quoid.</p>
-            <ul class="list-inline">
-              <li><span>Client</span>: John Doe</li>
-              <li><span>Service</span>: Web Design</li>
+              <li><span>Author</span>: Sean Reed</li>
+              <li><span>Illustrator</span>: Sam Beck</li>
             </ul>
             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
           </div>
