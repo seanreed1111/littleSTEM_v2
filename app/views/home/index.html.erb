@@ -17,7 +17,7 @@
         <li><a href="#works-section" class="page-scroll">Our Books</a></li> 
         <li><a href="#team-section" class="page-scroll">Team</a></li>
         <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li>
-        <li><a href="#contact-section" class="page-scroll btn btn-default">Buy book!</a></li>
+        <li><%= link_to "Buy book!", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", target: "_blank", class: "page-scroll btn btn-default"%></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -28,8 +28,8 @@
 <!-- Header -->
 <header class="text-center" name="home">
   <div class="intro-text">
-    <h1 class="wow zoomIn">Welcome to <span class="brand">Invictus</span></h1>
-    <p class="wow fadeInDown" data-wow-delay="600ms">We are a picture book publisher.</p>
+    <h1 class="wow zoomIn">Welcome to <span class="brand">littleSTEM</span></h1>
+    <p class="wow fadeInDown" data-wow-delay="600ms">We make STEM-themed picture books for the littlest readers.</p>
     <div class="clearfix"></div>
     <a href="#about-section" class="btn btn-default btn-lg page-scroll wow fadeInDown" data-wow-delay="500ms">Find Out More</a> </div>
 </header>
@@ -183,11 +183,12 @@
   </div>
 </div>
 
-<!-- Contact Section -->
+<!-- Buy our Book Section -->
 <div id="contact-section">
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
-      <h2>Buy a book</h2>
+      <h2>Pick up your copy now</h2>
+      <%= link_to "Buy Book", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", class: "btn btn-default" %>
       <hr>
       <div class="clearfix"></div>
     </div>
@@ -241,7 +242,7 @@
               <li><span>Illustrator</span>: Sam Beck</li>
             </ul>
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
-            <%= link_to "ORDER NOW", "#", class: "btn btn-primary"%>
+            <%= link_to "Preorder NOW", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", target: "_blank", class: "btn btn-primary"%>
           </div>
         </div>
       </div>
