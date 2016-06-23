@@ -13,11 +13,11 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path, class:"page-scroll"%></li>
-        <li><a href="#about-section" class="page-scroll">About</a></li>
-        <li><a href="#works-section" class="page-scroll">Our Books</a></li> 
-        <li><a href="#team-section" class="page-scroll">Team</a></li>
-        <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li>
-        <li><%= link_to "Buy book!", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", target: "_blank", class: "page-scroll btn btn-default"%></li>
+        <li><%= link_to "Buy books!", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", target: "_blank", class: "page-scroll btn btn-default"%></li>
+        <li><%= link_to "About", "#about-section", class:"page-scroll"%></li>
+        <!-- <li><%= link_to "Our Books", "#works-section", class:"page-scroll"%></li> -->
+        <li><%= link_to "Team", "#team-section", class:"page-scroll"%></li>
+        <li><%= link_to "Testimonials", "#testimonials-section", class:"page-scroll"%></li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -28,10 +28,10 @@
 <!-- Header -->
 <header class="text-center" name="home">
   <div class="intro-text">
-    <h1 class="wow zoomIn">Welcome to <span class="brand">littleSTEM</span></h1>
-    <p class="wow fadeInDown" data-wow-delay="600ms">We make STEM-themed picture books for the littlest readers.</p>
+    <h1 class="wow zoomIn">Welcome to <span class="brand">littleSTEM Books</span></h1>
+    <p class="wow fadeInDown" data-wow-delay="1000ms">We make science-themed picture books for the littlest readers.</p>
     <div class="clearfix"></div>
-    <a href="#about-section" class="btn btn-default btn-lg page-scroll wow fadeInDown" data-wow-delay="500ms">Find Out More</a> </div>
+    <a href="#about-section" class="btn btn-default btn-lg page-scroll wow fadeInDown" data-wow-delay="100ms">Find Out More</a> </div>
 </header>
 
 <!-- About Section -->
@@ -43,7 +43,7 @@
         <hr>
       </div>
       <div class="row wow fadeInDown" data-wow-delay="200ms">
-        <div class="col-md-6"> <%= image_tag "about.jpg", class: "img-responsive center-block" %> </div>
+        <div class="col-md-6"> <%= image_tag "cover2-510.png", class: "img-responsive center-block" %> </div>
         <div class="col-md-6">
           <div class="about-text">
             <h3><span class="color">Who</span> we are</h3>
@@ -59,101 +59,102 @@
   </div>
 </div>
 
-<!-- Showcase of Books Section -->
-<div id="works-section">
-  <div class="container">
-    <div class="section-title text-center wow fadeInDown">
-      <h2>Our Books</h2>
-      <hr>
-      <div class="clearfix"></div>
+<!-- Showcase of Books Section 
+  <div id="works-section">
+    <div class="container">
+      <div class="section-title text-center wow fadeInDown">
+        <h2>Our Books</h2>
+        <hr>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="portfolio-items">
+            <div class="portfolio-item wow fadeInDown" data-wow-delay="200ms">
+              <div class="hover-bg container-fluid"> 
+              <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                <div class="hover-text text-center">
+                  <h3>Serena Sees Her Footprints on the Moon</h3>
+                  <p></p>
+                  <div class="clearfix"></div>
+                </div>
+                <%= image_tag 'portfolio/01.jpg', class:"center-block img-responsive", alt: "Project Title 1" %>
+              </a> </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  /</div>
+-->
+
+<!-- Team Section 
+  <div id="team-section" class="text-center">
+    <div class="container">
+      <div class="section-title wow fadeInDown">
+        <h2>Meet our Team</h2>
+        <hr>
+        <div class="clearfix"></div>
+        <div class="space"></div>
+      </div>
+      <div id="row" class="wow fadeInDown" data-wow-delay="200ms">
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <%= image_tag 'team/01.jpg', class:"team-img", alt: "team 1" %>
+            <div class="caption">
+              <h3>Jessica Wally</h3>
+              <p>CEO / Founder</p>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <%= image_tag 'team/02.jpg', class:"team-img", alt: "team 2" %>
+            <div class="caption">
+              <h3>Mike Sloan</h3>
+              <p>Web Designer</p>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <%= image_tag 'team/03.jpg', class:"team-img", alt: "team 3" %>
+            <div class="caption">
+              <h3>Michele Doe</h3>
+              <p>Web Designer</p>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 team">
+          <div class="thumbnail"> <%= image_tag 'team/04.jpg', class:"team-img", alt: "team 4" %>
+            <div class="caption">
+              <h3>Larry Evans</h3>
+              <p>Project Manager</p>
+              <ul class="list-inline">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="portfolio-items">
-          <div class="portfolio-item wow fadeInDown" data-wow-delay="200ms">
-            <div class="hover-bg container-fluid"> 
-            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text text-center">
-                <h3>Serena Sees Her Footprints on the Moon</h3>
-                <p></p>
-                <div class="clearfix"></div>
-              </div>
-              <%= image_tag 'portfolio/01.jpg', class:"center-block img-responsive", alt: "Project Title 1" %>
-            </a> </div>
-          </div>
-      </div>
-    </div>
-  </div>
-/</div>
-
-<!-- Team Section -->
-<div id="team-section" class="text-center">
-  <div class="container">
-    <div class="section-title wow fadeInDown">
-      <h2>Meet our Team</h2>
-      <hr>
-      <div class="clearfix"></div>
-      <div class="space"></div>
-    </div>
-    <div id="row" class="wow fadeInDown" data-wow-delay="200ms">
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <%= image_tag 'team/01.jpg', class:"team-img", alt: "team 1" %>
-          <div class="caption">
-            <h3>Jessica Wally</h3>
-            <p>CEO / Founder</p>
-            <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <%= image_tag 'team/02.jpg', class:"team-img", alt: "team 2" %>
-          <div class="caption">
-            <h3>Mike Sloan</h3>
-            <p>Web Designer</p>
-            <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <%= image_tag 'team/03.jpg', class:"team-img", alt: "team 3" %>
-          <div class="caption">
-            <h3>Michele Doe</h3>
-            <p>Web Designer</p>
-            <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 team">
-        <div class="thumbnail"> <%= image_tag 'team/04.jpg', class:"team-img", alt: "team 4" %>
-          <div class="caption">
-            <h3>Larry Evans</h3>
-            <p>Project Manager</p>
-            <ul class="list-inline">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+-->
 <!-- Testimonials Section -->
 <div id="testimonials-section" class="text-center">
   <div class="container">
@@ -187,7 +188,7 @@
 <div id="contact-section">
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
-      <h2>Pick up your copy now</h2>
+      <h2>Get your copy now!</h2>
       <%= link_to "Buy Book", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", class: "btn btn-default" %>
       <hr>
       <div class="clearfix"></div>
@@ -199,10 +200,9 @@
   <div class="container">
     <div class="social">
       <ul>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://facebook.com/girlsinstem"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/kittykaraoke"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://pinterest.com/agstem"><i class="fa fa-pinterest"></i></a></li>
       </ul>
     </div>
   </div>
