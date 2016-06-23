@@ -16,7 +16,7 @@
         <li><%= link_to "Buy books!", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", target: "_blank", class: "page-scroll btn btn-default"%></li>
         <li><%= link_to "About", "#about-section", class:"page-scroll"%></li>
         <!-- <li><%= link_to "Our Books", "#works-section", class:"page-scroll"%></li> -->
-        <li><%= link_to "Team", "#team-section", class:"page-scroll"%></li>
+<!--         <li><%= link_to "Team", "#team-section", class:"page-scroll"%></li> -->
         <li><%= link_to "Testimonials", "#testimonials-section", class:"page-scroll"%></li>
       </ul>
     </div>
@@ -29,7 +29,7 @@
 <header class="text-center" name="home">
   <div class="intro-text">
     <h1 class="wow zoomIn">Welcome to <span class="brand">littleSTEM Books</span></h1>
-    <p class="wow fadeInDown" data-wow-delay="1000ms">We make science-themed picture books for the littlest readers.</p>
+    <p class="wow fadeInDown" data-wow-delay="600ms">We make science-themed picture books for the littlest readers.</p>
     <div class="clearfix"></div>
     <a href="#about-section" class="btn btn-default btn-lg page-scroll wow fadeInDown" data-wow-delay="100ms">Find Out More</a> </div>
 </header>
@@ -159,7 +159,7 @@
 <div id="testimonials-section" class="text-center">
   <div class="container">
     <div class="section-title wow fadeInDown">
-      <h2>What our Clients say</h2>
+      <h2>What our Readers say</h2>
       <hr>
       <div class="clearfix"></div>
     </div>
@@ -192,6 +192,36 @@
       <%= link_to "Buy Book", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", class: "btn btn-default" %>
       <hr>
       <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Contribute to our Cause Section -->
+<div id="testimonials-section" class="text-center">
+  <div class="container">
+    <div class="section-title wow fadeInDown">
+      <h2>We want to get our books in as many hands as possible. Can you help?</h2>
+      <%= link_to "contribute here", "https://www.indiegogo.com/projects/serena-sees-her-footprints-on-the-moon-a-new-book/", class: "btn btn-default" %>
+      <hr>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 wow fadeInDown" data-wow-delay="200ms">
+        <div id="testimonial" class="owl-carousel owl-theme">
+          <div class="item"> <%= image_tag 'clients/01.jpg', alt: "Testimonial 1" %>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
+            <p><strong>John DOE</strong>, CEO, Company.</p>
+          </div>
+          <div class="item"> <%= image_tag 'clients/02.jpg', alt: "Testimonial 2" %>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
+            <p><strong>Jenny DOE</strong>, CEO, Company.</p>
+          </div>
+          <div class="item"> <%= image_tag 'clients/03.jpg', alt: "Testimonial 3" %>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
+            <p><strong>John DOEn</strong>, CEO, Company.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
