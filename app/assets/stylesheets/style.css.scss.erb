@@ -7,12 +7,13 @@ body, html {
   line-height: 30px;
 }
 h1 {
-  line-height: 65px;
+  line-height: 75px;
 }
 h1 strong {
   font-weight: 900;
 }
 h2 {
+  line-height: 45px;
   margin: 0;
 }
 h3 {
@@ -24,7 +25,7 @@ h3 {
 h4 {
   font-size: 20px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   color: #444;
 }
 h5 {
@@ -38,10 +39,18 @@ p {
 a {
   color: #777;
 }
+
+.button {
+  color: green
+}
+.test {
+    text-transform: none;
+}
 a:hover, a:focus {
-  text-decoration: none;
   color: #777;
-  font-weight: 900;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 100;
 }
 span {
   text-transform: none;
@@ -78,7 +87,7 @@ ul, ol {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: rgba(248, 248, 248, 0);
+  background-color: rgba(248, 248, 248, 0.5);
   border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
@@ -98,13 +107,13 @@ ul, ol {
   color: #ffffff;
   font-size: 12px;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 400;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
   color: #777;
 }
 .on {
-  background-color: #444 !important;
+  background-color: #fff !important;
   padding: 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -117,9 +126,11 @@ ul, ol {
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: #f38181;
   border-color: #f38181;
+  font-weight: 400;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
   background-color: #FFF;
+  font-weight: 900;
 }
 /* Home Style */
 header {
@@ -153,7 +164,7 @@ header p {
   font-weight: 700;
 }
 .btn-default {
-  color: #fff;
+  color: black;
   background-color: transparent;
   border: 2px solid #fff;
   margin: 0 8px;
@@ -162,10 +173,14 @@ header p {
   letter-spacing: 1px;
   border-radius: 0;
 }
+
+.btn-info {
+  
+}
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-  background-color: rgba(245,152,152,0.8);
-  border: 2px solid rgba(245,152,152,0.2);
-  color: #fff;
+  border: 2px solid rgba(245,245,245,0.3);
+  color: #ccc;
+  background-color: transparent;
 }
 /* About Section */
 #about-section {
@@ -656,7 +671,13 @@ label {
 }
 
 @media (max-width: 360px) {
-.hover-bg .hover-text {
-  padding: 22% 10%;
+  .hover-bg .hover-text {
+    padding: 22% 10%;
+  }
 }
+.test h3{
+    text-transform: none;
+    line-height: 25px;
 }
+
+

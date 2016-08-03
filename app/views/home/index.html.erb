@@ -13,9 +13,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path, class:"page-scroll"%></li>
-        <li><%= link_to "Buy books!", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", target: "_blank", class: "page-scroll btn btn-default"%></li>
+        <li><%= link_to "Our Books", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", target: "_blank", class: "page-scroll btn btn-default"%></li>
         <li><%= link_to "About", "#about-section", class:"page-scroll"%></li>
-        <!-- <li><%= link_to "Our Books", "#works-section", class:"page-scroll"%></li> -->
+        <!-- <li><%= link_to "Our Books", "#works-section", class:"page-scroll", target: "_blank"%></li> -->
 <!--         <li><%= link_to "Team", "#team-section", class:"page-scroll"%></li> -->
         <li><%= link_to "Testimonials", "#testimonials-section", class:"page-scroll"%></li>
       </ul>
@@ -47,11 +47,11 @@
         <div class="col-md-6">
           <div class="about-text">
             <h3><span class="color">Who</span> we are</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            <p>We are a team that makes beautiful picture books showing young girls engaged with science and technology-related themes.</p>
             <h3><span class="color">What</span> we do</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam.</p>
+            <p>We use the writing and artwork of our books to engage our young readers and teach them fun facts about the universe around them.</p>
             <h3><span class="color">Our</span> philosophy</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam.</p>
+            <p> We want the little ones who enjoy our books to self-identify as kids who like science and math, so they'll keep STEM-related careers in their minds as goals and options for themselves. Our picture books show images of young characters that reflect the true diversity of the world around us and show them to the world. We believe this is one way to help the next generation of girls and boys see that STEM is for everyone.</p>
           </div>
         </div>
       </div>
@@ -157,13 +157,38 @@
 -->
 <!-- Testimonials Section -->
 <div id="testimonials-section" class="text-center">
-  <div class="container">
+  <div class="container test">
     <div class="section-title wow fadeInDown">
-      <h2>What our Readers say</h2>
+      <h2>What our Readers say about "Serena Sees"</h2>
+      <div class="container">
+      <p><h3>We read the book as family and we loved it. The callbacks to Serena seeing her footprints on the moon made a real impression on my 3 (almost 4) year old daughter. The next morning she said 'Daddy, did you know there are footprints on the moon?'' Good work!" - Robert M.</h3></p>
+      </div>
+      <hr>
+      <div class="container">
+      <p><h3>Happy to report that I learned some extra things about the moon program by reading Serena sees her foot prints! I hope this is a format you plan to repeat for other books in the STEM space. - Gavin H.</h3></p>
+      </div>
+      <hr>
+      <div class="container">
+      <p><h3>Such a lovely book.  Pure poetry.  The narration is at once elegiac and triumphant.  I love the confidence Serena exudes; she is a wonderful protagonist (a clear role model for women, girls, and POC).  I especially liked her assurance that though humans haven’t been on the far side of the Moon, she has been there.  I’m confident that readers will be spurred to do more research into the history of the Moon landings (and plans for return) after reading “Serena”! Best wishes with the launch! - Christine R.</h3></p>
+      </div>
+      <hr>
+      <div class="container">
+      <p><h3>I absolutely love the repetition. I think it can really be a story whose words echo in children’s minds as they grow up. I also like the motif of the permanence of a girl’s accomplishments. The actions of moon-explorers may be distant, dated, and collecting dust, but they definitely happened and were definitely important. Even if nobody else can acknowledge Serena’s accomplishments, she sees the evidence of them herself and can rest assured, they cannot be taken from her. - Emma. G.</h3></p>
+      </div>
+      <hr>
+      <div class="container">
+      <p><h3>I think this would make a great story for younger girls. I like how it not only inspires girls to reach for the things they didn’t know possible, but also tells them a lot bit about what the moon is like. This is definitely a great way to get get girls interested in STEM fields from a young age. And I like the cover art :) - Alli. B.</h3></p>
+      <hr>
+      </div>
+      <div class="container">
+      <p><h3>This story is really cool! I can see Serena's excitement about her footprints on the especially through your use of repetition. The simplicity of the facts translates well and paints very vivid pictures. I didn't have to think very hard to see her on the moon and exploring and making these discoveries. Short and sweet and too the point, I can definitely see this being part of circle time in Pre-K and Kindergarten classrooms. - Keith M.</h3></p>
+      
+      </div>
       <hr>
       <div class="clearfix"></div>
     </div>
-    <div class="row">
+
+    <!-- <div class="row">
       <div class="col-md-8 col-md-offset-2 wow fadeInDown" data-wow-delay="200ms">
         <div id="testimonial" class="owl-carousel owl-theme">
           <div class="item"> <%= image_tag 'clients/01.jpg', alt: "Testimonial 1" %>
@@ -180,16 +205,14 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </div> -->
 
 <!-- Buy our Book Section -->
 <div id="contact-section">
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
       <h2>Get your copy now!</h2>
-      <%= link_to "Buy Book", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", class: "btn btn-default" %>
+      <%= link_to "Buy Book", "https://shop.trycelery.com/page/5735f8a05fc2bd1100be49a6", class: "btn  button" %>
       <hr>
       <div class="clearfix"></div>
     </div>
