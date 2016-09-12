@@ -1,9 +1,9 @@
 body, html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Calibre', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #777;
-  background-color: #FFFFFF;
+  color: #444;
+  background-color: #fff;
   line-height: 30px;
 }
 h1 {
@@ -19,25 +19,22 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 500;
-  color: #444;
   text-transform: uppercase;
 }
 h4 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 500;
-  color: #444;
 }
 h5 {
   text-transform: uppercase;
   font-weight: 700;
 }
 p {
-  color: #555;
   font-size: 13px;
 }
 a {
-  color: #777;
+  color: #444;
 }
 
 .button {
@@ -47,7 +44,6 @@ a {
     text-transform: none;
 }
 a:hover, a:focus {
-  color: #777;
   background-color: transparent;
   text-decoration: none;
   font-weight: 100;
@@ -92,7 +88,6 @@ ul, ol {
 }
 #menu a.navbar-brand {
   font-size: 22px;
-  color: #fff;
   font-weight: 600;
   background-image: url("<%= asset_path('logo-icon.png') %>");
   background-position: left center;
@@ -100,48 +95,44 @@ ul, ol {
   padding-left: 34px;
 }
 #menu a.navbar-brand i.fa {
-  color: #f38181;
 }
 #menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
-  color: #ffffff;
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: 400;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-  color: #777;
 }
 .on {
   background-color: #fff !important;
   padding: 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #fff !important;
   background-color: transparent;
 }
 .navbar-toggle {
   border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #f38181;
-  border-color: #f38181;
+  background-color: #ed3e44;
+  border-color: #ed3e44;
   font-weight: 400;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
-  background-color: #FFF;
+  background-color: #ed3e44;
   font-weight: 900;
 }
 /* Home Style */
 header {
-  background-image: url("<%= asset_path('header-bg.jpg') %>");
+  background-image: url("<%= asset_path('800px-Transit-of-Venus.jpg') %>");
   background-size: cover;
-  color: #cfcfcf;
+  color: #ed3e44;
   position: relative;
   height: 100%;
 }
 header p {
-  color: #ffffff;
+
   font-size: 18px;
   text-transform: uppercase;
   margin-bottom: 60px;
@@ -154,10 +145,10 @@ header p {
   padding-left: 0;
   padding-bottom: 220px;
 }
-.intro-text H1 {
+.intro-text h1 {
   font-size: 70px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #444;
   font-weight: 500;
 }
 .intro-text .brand {
@@ -166,7 +157,7 @@ header p {
 .btn-default {
   color: black;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #ed3e44;
   margin: 0 8px;
   font-size: 16px;
   text-transform: uppercase;
@@ -179,7 +170,6 @@ header p {
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
   border: 2px solid rgba(245,245,245,0.3);
-  color: #ccc;
   background-color: transparent;
 }
 /* About Section */
@@ -188,7 +178,7 @@ header p {
   background: #fff;
 }
 #about-section .color {
-  color: #f38181;
+  color: #ed3e44;
 }
 #about-section p {
   margin-top: 20px;
@@ -206,7 +196,6 @@ header p {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #444;
   text-transform: uppercase;
 }
 #team-section H3 {
@@ -215,7 +204,7 @@ header p {
 .section-title hr {
   height: 3px;
   width: 60px;
-  background: #f59898;
+  background: #ed3e44;
   position: relative;
   border: 0;
   margin-top: 40px;
@@ -223,7 +212,6 @@ header p {
 }
 #team-section i.fa {
   font-size: 16px;
-  color: #fff;
   margin-top: 10px;
   width: 30px;
   height: 30px;
@@ -231,7 +219,7 @@ header p {
   background: #ddd;
 }
 #team-section i.fa:hover {
-  background: #f59898;
+  background: #ed3e44;
 }
 #team-section .item {
   padding: 0;
@@ -261,24 +249,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .space {
   margin-top: 40px;
 }
-#services-section i.fa {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: #f59898;
-  transition: all 0.5;
-}
-#services-section .service:hover > i.fa {
-  color: #555;
-}
+
 /* Gallery Section 
 ==============================*/
 #works-section {
   padding: 100px 0 0 0;
 }
-.categories {
-  padding-bottom: 30px;
-  text-align: center;
-}
+
 ul.cat li {
   display: inline-block;
 }
@@ -287,17 +264,17 @@ ol.type li {
   margin-left: 20px;
 }
 ol.type li a {
-  color: #777;
+  color: #444;
   padding: 4px 8px;
   text-transform: uppercase;
 }
 ol.type li a.active {
   color: #ffffff;
-  background: #f59898;
+  background: #ed3e44;
 }
 ol.type li a:hover {
   color: #ffffff;
-  background: #f59898;
+  background: #ed3e44;
 }
 .isotope-item {
   z-index: 2
@@ -342,7 +319,7 @@ ol.type li a:hover {
   position: absolute;
   text-align: center;
   margin: 0 auto;
-  color: #ffffff;
+  color: #fff;
   background: rgba(245, 152, 152, 0.9);
   padding: 25% 0;
   height: 100%;
@@ -373,15 +350,7 @@ ol.type li a:hover {
 .hover-bg:hover .hover-text {
   opacity: 1;
 }
-#works-section i.fa {
-  height: 30px;
-  width: 30px;
-  border: 1px solid rgba(25,181,254,0.3);
-  font-size: 20px;
-  padding: 5px;
-  border-radius: 50%;
-  color: #19B5FE;
-}
+
 .portfolio-modal .modal-content {
   padding: 100px 0;
   min-height: 100%;
@@ -456,39 +425,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   transform: rotate(90deg);
 }
 .portfolio-modal .btn-primary {
-  color: #777;
   background-color: transparent;
   border: 2px solid #ddd;
   border-radius: 0;
 }
 .portfolio-modal .btn-primary:hover, .portfolio-modal .btn-primary:focus, .portfolio-modal .btn-primary.focus, .portfolio-modal .btn-primary:active, .portfolio-modal .btn-primary.active {
-  color: #fff;
-  background-color: #f59898;
-  border: 2px solid #f59898;
+
+  background-color: #ed3e44;
+  border: 2px solid #ed3e44;
 }
-/* Achivements Section */
-#achievements {
-  padding: 0 0 50px 0;
-  background: #CCCCCC;
-}
-.achievement-box i.fa {
-  font-size: 54px;
-  font-weight: 400;
-  color: #19B5FE;
-  margin-bottom: 20px;
-}
-.achievement-box h4 {
-  color: #ffffff;
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.achievement-box span.count {
-  font-size: 52px;
-  font-weight: 600;
-  display: block;
-  color: #fff;
-}
+
 /* Testimonials Section */
 #testimonials-section {
   padding: 100px 0 60px 0;
@@ -533,12 +479,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
   filter: Alpha(Opacity=100);
   opacity: 1;
-  background: #f59898;
-  border: 1px solid #f59898;
+  background: #ed3e44;
+  border: 1px solid #ed3e44;
 }
 .owl-theme .owl-controls .owl-page.active span {
-  background: #f59898;
-  border: 1px solid #f59898;
+  background: #ed3e44;
+  border: 1px solid #ed3e44;
 }
 /* Contact Section */
 #contact-section {
@@ -601,8 +547,8 @@ label {
   font-size: 15px;
 }
 #contact-section .btn:hover, #contact-section .btn:focus {
-  background: #f59898;
-  border: 2px solid #f59898;
+  background: #ed3e44;
+  border: 2px solid #ed3e44;
   color: #fff;
 }
 #contact-section .text-danger {
@@ -630,7 +576,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   margin: 0 30px;
 }
 #social-section .social i.fa {
-  color: #f59898;
+  color: #ed3e44;
   font-size: 26px;
   padding: 8px 0;
   width: 40px;
@@ -639,7 +585,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #social-section .social i.fa:hover {
   color: #fff;
-  background: #f59898;
+  background: #ed3e44;
 }
 /* Footer */
 #footer {
