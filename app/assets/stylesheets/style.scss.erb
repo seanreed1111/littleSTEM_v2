@@ -1,8 +1,8 @@
 body, html {
-  font-family: 'Calibre', sans-serif;
+  font-family: Calibre, sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  color: #777;
+  color: #383838;
   background-color: #fff;
   line-height: 30px;
 }
@@ -17,9 +17,10 @@ h2 {
   margin: 0;
 }
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
+  line-height: 30px;
 }
 h4 {
   font-size: 12px;
@@ -31,15 +32,19 @@ h5 {
   font-weight: 700;
 }
 p {
-  font-size: 13px;
+  font-size: 16px;
 }
 
-p .about-text {
-  font-size: 15px;  
+.book-image {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.about-text p  {
+  font-size: 16px;  
 }
 
 a {
-  color: #444;
+  color: #383838;
 }
 
 .test {
@@ -89,6 +94,7 @@ ul, ol {
   border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
+  color: 383838;
   font-size: 22px;
   font-weight: 600;
   background-image: url("<%= asset_path('logo-icon.png') %>");
@@ -103,8 +109,10 @@ ul, ol {
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 900;
+  color: 383838;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
+  color: 383838;
 }
 .on {
   background-color: #fff !important;
@@ -121,8 +129,11 @@ ul, ol {
   border-color: #fff;
   font-weight: 900;
 }
+.icon-bar {
+  background-color: #fff;
+}
 .navbar-default .navbar-toggle:hover>.icon-bar {
-  background-color: #ed3e44;
+  background-color: #383838;
   font-weight: 900;
 }
 /* Home Style */
@@ -160,7 +171,7 @@ font-weight: 500;
   font-weight: 700;
 }
 .btn-default {
-  color: black;
+  color: 383838;
   background-color: transparent;
   border: 2px solid #ed3e44;
   margin: 0 8px;
@@ -269,7 +280,7 @@ ol.type li {
   margin-left: 20px;
 }
 ol.type li a {
-  color: #444;
+  color: #383838;
   padding: 4px 8px;
   text-transform: uppercase;
 }
