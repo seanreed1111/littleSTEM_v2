@@ -179,7 +179,7 @@ font-weight: 500;
 }
 /* About Section */
 #about-section, #about-littlestem-books {
-  padding: 40px 0;
+  padding: 20px 0;
   background: #fff;
 }
 #about-section .color, #about-littlestem-books .color {
@@ -447,14 +447,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /* Testimonials Section */
 #testimonials-section {
   padding: 100px 0 60px 0;
-  
   background-image: url("<%= asset_path('testimonials-bg.jpg') %>");
   background-size: cover;
   background-attachment: fixed;
 }
+
 #testimonials-section i.fa {
   color: #8e9599;
   font-size: 36px;
+}
+
+#testimonials-section .btn {
+  background: #fbfbfb;
+  border: 2px solid #ccc;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 0;
+  color: #aaa;
+  font-size: 15px;
+}
+#testimonials-section .btn:hover, #testimonials-section .btn:focus {
+  background: #ed3e44;
+  border: 2px solid #ed3e44;
+  color: #fff;
 }
 #testimonial {
   padding: 30px 0;
@@ -523,29 +538,22 @@ label {
   font-family: 'Open Sans', sans-serif;
   float: left;
 }
-#contact-section .form-control {
-  display: block;
-  width: 100%;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 2px solid #ddd;
-  border-radius: 2px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
+
+.buy-book .btn {
+  background: #fbfbfb;
+  border: 2px solid #ccc;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-left: 0;
+  color: #aaa;
+  font-size: 15px;
 }
-#contact-section .form-control:focus {
-  border-color: inherit;
-  outline: 0;
-  -webkit-box-shadow: transparent;
-  box-shadow: transparent;
+.buy-book .btn:hover, .buy-book .btn:focus {
+  background: #ed3e44;
+  border: 2px solid #ed3e44;
+  color: #fff;
 }
+
 #contact-section .btn {
   background: #fbfbfb;
   border: 2px solid #ccc;
