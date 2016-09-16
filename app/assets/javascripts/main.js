@@ -38,6 +38,9 @@ function main() {
         offset: 80
     })
 
+    /*====================================
+    Owl Carousel Menu
+    ======================================*/
   	$(document).ready(function() {
   	  $("#team").owlCarousel({
   	 
