@@ -13,7 +13,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path, class:"page-scroll"%></li>
-        <li><%= link_to "Our Book", "https://www.indiegogo.com/projects/serena-sees-her-footprints-on-the-moon-a-new-book#/", target: "_blank", class: "page-scroll btn button"%></li>
+        <li><%= link_to "Our Book", "#tell-me-more-section", class:"page-scroll" %></li>
         <li><%= link_to "About", "#about-section", class:"page-scroll"%></li>
         <!-- <li><%= link_to "Our Books", "#works-section", class:"page-scroll", target: "_blank"%></li> -->
 <!--         <li><%= link_to "Team", "#team-section", class:"page-scroll"%></li> -->
@@ -48,45 +48,47 @@
       <div class="container">
         <div class="col-xs-12 col-sm-12 col-md-12  col-lg-12">
           <div class="about-text">
-            <h3><span class="color">Who</span> we are</h3>
-            <p>We are a team that makes beautiful picture
-                    books showing young girls engaged with science
-                    and technology-related themes.
-            </p>
-            <h3><span class="color">What</span> we do</h3>
-            <p>We use the writing and artwork of our books
-                    to engage our young readers and teach them fun
-                    facts about the universe around them.
-            </p>
-            <h3><span class="color">Our</span> philosophy</h3>
-            <p>We want the little ones who enjoy our books
-                    to self-identify as kids who like science and
-                    math, so they'll keep STEM-related careers in
-                    their minds as goals and options for
-                    themselves. Our picture books show images of
-                    young characters that reflect the true
-                    diversity of the world around us and show them
-                    to the world. We believe this is one way to
-                    help the next generation of girls and boys see
-                    that STEM is for everyone.
-            </p>
-
-        </div>
-
-          <div class="col-xs-12 col-sm-12 col-md-12  col-lg-12">
-            <%= image_tag "cover2-510.png", class: "img-responsive center-block" %>
+            <div class="container">
+              <h3><span class="color">Who</span> we are</h3>
+              <p>We are a team that makes beautiful picture
+                      books showing young girls engaged with science
+                      and technology-related themes.
+              </p>
+              <h3><span class="color">What</span> we do</h3>
+              <p>We use the writing and artwork of our books
+                      to engage our young readers and teach them fun
+                      facts about the universe around them.
+              </p>
+              <h3><span class="color">Our</span> philosophy</h3>
+              <p>We want the little ones who enjoy our books
+                      to self-identify as kids who like science and
+                      math, so they'll keep STEM-related careers in
+                      their minds as goals and options for
+                      themselves. Our picture books show images of
+                      young characters that reflect the true
+                      diversity of the world around us and show them
+                      to the world. We believe this is one way to
+                      help the next generation of girls and boys see
+                      that STEM is for everyone.
+              </p>
+            </div>
           </div>
+          <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12  col-lg-12">
+              <%= image_tag "cover2-510.png", class: "img-responsive center-block" %>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <!-- Testimonials Section -->
 <div id="testimonials-section" class="text-center">
   <div class="container test">
-    <div class="section-title wow fadeInDown">
-    <h2>Tell Me More About Your New Book</h2>
+    <div class="section-title wow fadeInDown" id="tell-me-more-section">
+    <h2 id="tell-me-more-section">Tell Me More About Your New Book</h2>
           <div class="container">
     <p><h3>
             <span>Serena Sees Her Footprints on the Moon</span> is about a young girl who imagines a fun trip to the Moon, where she plays with some of the objects left
