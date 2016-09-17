@@ -7,7 +7,10 @@ TTD -
   Put this in the adwords group for free children's book online
 
 Add a donate button
-
+Join our Monthly Giving Program
+Donate via Stripe
+Give Via PayPal
+Give Via Credit Card
 
 Our Mission is to both show girls and boys that girls belong in science and technology, too!
 
