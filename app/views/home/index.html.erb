@@ -17,6 +17,7 @@
         <!-- <li><%= link_to "Our Books", "#works-section", class:"page-scroll", target: "_blank"%></li> -->
 <!--         <li><%= link_to "Team", "#team-section", class:"page-scroll"%></li> -->
         <li><%= link_to "Testimonials", "#testimonials-section", class:"page-scroll"%></li>
+        <li><%= link_to "Donate", "#", class:"page-scroll"%></li>        
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -127,13 +128,27 @@
       <div class="clearfix"></div>
     </div>
 
+<!-- Donate Section -->
+<div id="donate" >
+  <div class="container">
+    <div class="section-title text-center wow fadeInDown">
+      <h2>Donate to <span>little</span>STEM Books</h2>
+      <%= link_to "Yes, I Support littleSTEM's Mission!", "https://www.fracturedatlas.org/site/fiscal/profile?id=12967", class: "btn", target: "_blank" %>
+      <h3>Thank you for your support.</h3>
+      <h3>Your contribution helps give more books for free to little readers everywhere!</h3>
+
+      <hr>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
 <!-- Buy our Book Section -->
 <div id="contact-section buy-book" >
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
       <h2>Get your copies now!</h2>
-      <%= link_to "Support Our Mission", "https://www.indiegogo.com/projects/serena-sees-her-footprints-on-the-moon-a-new-book#/", class: "btn", target: "_blank" %>
-      <hr>
+      <%= link_to "Buy Books Here", "https://www.indiegogo.com/projects/serena-sees-her-footprints-on-the-moon-a-new-book#/", class: "btn", target: "_blank" %>
       <div class="clearfix"></div>
     </div>
   </div>
@@ -143,7 +158,7 @@
 <div id="contact-section buy-book" >
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
-      <h2>Check Out Our Book on <span>i</span>Tunes</h2>
+      <h3>Check out our e-book for FREE on <span>i</span>Tunes!</h3>
       <%= link_to image_tag("app-store-icon.svg"), "https://itun.es/us/CnX6bb.l", target: "_blank", class: "app-store-link" %>
       <hr>
       <div class="clearfix"></div>
@@ -348,5 +363,6 @@ Our goals are to:
 <div id="footer" class="text-center">
   <div class="container">
     <p>Copyright &copy; 2016 littleSTEM Books, a 501(c)3 non-profit organization based in the U.S.A. All rights reserved.</p>
+    <p>FracturedAtlas handles donations-processing for over 58,000 arts-related projects, including littleSTEM Books.</p>
   </div>
 </div>
