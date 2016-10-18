@@ -6,7 +6,7 @@ function main() {
 
    /* ==============================================
   	Testimonial Slider
-  	=============================================== */ 
+
 
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -20,7 +20,7 @@ function main() {
           }
         }
       });
-
+    =============================================== */ 
     /*====================================
     Show Menu
     ======================================*/
@@ -40,7 +40,7 @@ function main() {
 
     /*====================================
     Owl Carousel Menu
-    ======================================*/
+
   	$(document).ready(function() {
   	  $("#team").owlCarousel({
   	 
@@ -86,10 +86,10 @@ function main() {
         });
 
   	});
-
+    ======================================*/
   	/*====================================
     Portfolio Isotope Filter
-    ======================================*/
+
     $(window).load(function() {
         var $container = $('.portfolio-items');
         $container.isotope({
@@ -116,7 +116,14 @@ function main() {
         });
 
     });
-
+    ======================================*/
+    /*
+      Description:
+      The toLocaleDateString() method returns a string with a language sensitive representation of the date portion of this date. The new locales and options arguments let applications specify the language whose formatting conventions should be used and allow to customize the behavior of the function. In older implementations, which ignore the locales and options arguments, the locale used and the form of the string returned are entirely implementation dependent.
+    
+      Syntax:
+      dateObj.toLocaleDateString([locales [, options]])
+    */
   	/*====================================
     CounterUp
     ======================================*/	
@@ -132,14 +139,14 @@ function main() {
 	
 	/*====================================
     WOW JS
-    ======================================*/	
+
 
 	new WOW().init();
 	//smoothScroll
 	smoothScroll.init();
-
+======================================*/
 }());
-
+  
 
 }
 main();
