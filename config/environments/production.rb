@@ -18,11 +18,23 @@ Rails.application.configure do
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like
   # NGINX, varnish or squid.
-  # config.action_dispatch.rack_cache = true
+  client = Dalli::Client.new((ENV["MEMCACHIER_SERVERS"] || "").split(","),
+                        :username => ENV["MEMCACHIER_USERNAME"],
+                        :password => ENV["MEMCACHIER_PASSWORD"],
+                        :failover => true,
+                        :socket_timeout => 1.5,
+                        :socket_failure_delay => 0.2,
+                        :value_max_bytes => 10485760)
+
+  config.action_dispatch.rack_cache = {
+    :metastore => client,
+    :entitystore => client
+  }
+  config.static_cache_control = "public, max-age=25920000"
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  config.serve_static_files = false
+  config.serve_static_files = true
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
@@ -56,7 +68,6 @@ Rails.application.configure do
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
-
 
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
