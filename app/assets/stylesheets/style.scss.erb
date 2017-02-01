@@ -36,12 +36,45 @@ p {
   font-size: 20px;
 }
 
+.btn {
+  background: #ed3e44;
+  border: 1px solid #fff;
+  padding: 20px 30px;
+  margin-top: 25px;
+  margin-left: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.btn:hover, .btn:focus {
+  background: #ed3e44;
+  border: 2px solid #fff;
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.btn-donate {
+  color: #383838;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin: 0 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+}
+
+.btn-donate:hover, .btn-donate:focus, {
+  color: #383838;
+  border: 1px solid #383838;
+  }
 .book-image {
   margin-top: 30px;
   margin-bottom: 50px;
 }
 .about-text p  {
-  font-size: 20px;  
+  font-size: 20px;
 }
 
 a {
@@ -143,7 +176,7 @@ ul, ol {
 #donate {
   background-color: #fff;
   padding-top: 40px;
-  padding-bottom: 40px; 
+  padding-bottom: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -172,27 +205,10 @@ font-weight: 500;
 .intro-text .brand {
   font-weight: 700;
 }
-.btn-default {
-  color: 383838;
-  background-color: transparent;
-  border: 2px solid #ed3e44;
-  margin: 0 8px;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 0;
-}
 
-.btn-info {
-  
-}
-.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-  border: 2px solid rgba(245,245,245,0.3);
-  background-color: transparent;
-}
 
 .app-store-link {
-  padding-bottom: 40px;
+  margin: 40px 25px;
 }
 /* About Section */
 #about-section, #about-littlestem-books {
@@ -272,7 +288,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   margin-top: 40px;
 }
 
-/* Gallery Section 
+/* Gallery Section
 ==============================*/
 #works-section {
   padding: 100px 0 0 0;
@@ -391,20 +407,8 @@ ol.type li a:hover {
   font-size: 36px;
 }
 
-#testimonials-section .btn {
-  background: #fbfbfb;
-  border: 2px solid #ccc;
-  padding: 10px 20px;
-  margin-top: 20px;
-  margin-left: 0;
-  color: #383838;
-  font-size: 15px;
-}
-#testimonials-section .btn:hover, #testimonials-section .btn:focus {
-  background: #ed3e44;
-  border: 2px solid #ed3e44;
-  color: #fff;
-}
+
+
 #testimonial {
   padding: 30px 0;
 }
@@ -423,48 +427,20 @@ ol.type li a:hover {
   color: #444;
 }
 
-.buy-book .btn {
-  background: #fbfbfb;
-  border: 2px solid #ccc;
-  padding: 10px 20px;
-  margin-top: 20px;
-  margin-left: 0;
-  color: #383838;
-  font-size: 15px;
-}
-.buy-book .btn:hover, .buy-book .btn:focus {
-  background: #ed3e44;
-  border: 2px solid #ed3e44;
-  color: #fff;
-}
 
-#contact-section .btn {
-  background: #fbfbfb;
-  border: 2px solid #ccc;
-  padding: 10px 20px;
-  margin-top: 20px;
-  margin-left: 0;
-  color: #383838;
-  font-size: 15px;
-}
-#contact-section .btn:hover, #contact-section .btn:focus {
-  background: #ed3e44;
-  border: 2px solid #ed3e44;
-  color: #fff;
-}
-#contact-section .text-danger {
-  color: #cc3300;
-  text-align: left;
-}
 .btn:active, .btn.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+a:focus {
   outline: none;
   outline-offset: none;
+}
+
+#itunes {
+  padding: 35px 0;
 }
 /* Social Section */
 #social-section {

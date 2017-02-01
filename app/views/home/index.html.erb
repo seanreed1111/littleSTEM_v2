@@ -15,7 +15,7 @@
         <li><%= link_to "Home", root_path, class:"page-scroll"%></li>
         <li><%= link_to "About", "#about-section", class:"page-scroll"%></li>
         <li><%= link_to "Testimonials", "#testimonials-section", class:"page-scroll"%></li>
-        <li><%= link_to "Donate", "https://www.fracturedatlas.org/site/fiscal/profile?id=12967", class:"btn", target: "_blank"%></li>
+        <li><%= link_to "Donate", "https://www.fracturedatlas.org/site/fiscal/profile?id=12967", class:"btn-donate", target: "_blank"%></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -117,32 +117,29 @@
 <div id="donate" >
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
-      <h2>Donate to <span>little</span>STEM Books</h2>
-      <%= link_to "Yes, I Support littleSTEM's Mission!", "https://www.fracturedatlas.org/site/fiscal/profile?id=12967", class: "btn", target: "_blank" %>
-      <h3>Thank you for your support.</h3>
-      <h3>Your contribution helps give more books for free to little readers everywhere!</h3>
-
+      <h2>Donate to <span>little</span>STEM Books!</h2>
+      <%= link_to "Donate", "https://www.fracturedatlas.org/site/fiscal/profile?id=12967", class: "btn", target: "_blank" %>
       <div class="clearfix"></div>
     </div>
   </div>
 </div>
 
 <!-- Buy our Book Section -->
-<div id="contact-section buy-book" >
+<div id="contact-section" >
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
       <h2>Get your copy of <i>Serena Sees</i> Here!</h2>
-      <%= link_to "Buy Book", "https://gumroad.com/l/softcover", class: "btn", target: "_blank" %>
+      <%= link_to "Buy", "https://gumroad.com/l/softcover", class: "btn", target: "_blank" %>
       <div class="clearfix"></div>
     </div>
   </div>
 </div>
 
 <!-- Buy our itunes Section -->
-<div id="contact-section buy-book" >
+<div id="itunes" >
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
-      <h3>Check out our book for only 99 cents on <span>i</span>Tunes!</h3>
+      <h2>Get it for 99 cents on <span>i</span>Tunes!</h2>
       <%= link_to image_tag("app-store-icon.svg"), "https://itun.es/us/CnX6bb.l", target: "_blank", class: "app-store-link" %>
       <hr>
       <div class="clearfix"></div>
