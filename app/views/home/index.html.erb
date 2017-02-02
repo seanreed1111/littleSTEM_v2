@@ -1,39 +1,12 @@
-
-<!-- Navigation
-    ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <%= link_to "littleSTEM Books", root_path, class:"navbar-brand" %>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path, class:"page-scroll"%></li>
-        <li><%= link_to "About", "#about-section", class:"page-scroll"%></li>
-        <li><%= link_to "Testimonials", "#testimonials-section", class:"page-scroll"%></li>
-        <li><%= link_to "Donate", "https://www.fracturedatlas.org/site/fiscal/profile?id=12967", class:"btn-donate", target: "_blank"%></li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container-fluid -->
-</nav>
-
 <!-- Header -->
 <header class="text-center" name="home">
   <div class="intro-text">
     <h1 class="wow zoomIn"><span class="brand">WELCOME TO littleSTEM BOOKS</span></h1>
     <div class="clearfix"></div>
-
-</header>
   </div>
+</header>
 
 <!-- About Section -->
-
 <div id="about-section" class="container">
   <div class="row">
     <div class="section-title text-center center wow fadeInDown">
@@ -41,7 +14,7 @@
         <hr>
     </div>
 
-    <div class="row wow fadeInDown" data-wow-delay="200ms">
+    <div class="row wow fadeInDown" data-wow-delay="100ms">
       <div class="container">
         <div class="col-xs-12 col-sm-12 col-md-12  col-lg-12">
           <div class="about-text">
@@ -94,9 +67,9 @@
       <hr>
       <h2>Praise for "Serena"</h2>
       <div class="container">
-      <p><h3>We read the book as family and we loved it.<h3></p>
-      <p><h3>Your book made a real impression on my 3 (almost 4) year old daughter.</h3></p>
-      <p><h3>The next morning she said 'Daddy, did you know there are footprints on the moon?' Good work! - Robert M.</h3></p>
+        <p><h3>We read the book as family and we loved it.<h3></p>
+        <p><h3>Your book made a real impression on my 3 (almost 4) year old daughter.</h3></p>
+        <p><h3>The next morning she said 'Daddy, did you know there are footprints on the moon?' Good work! - Robert M.</h3></p>
       </div>
       <hr>
       <div class="container">
@@ -106,9 +79,9 @@
       <hr>
 
       <div class="container">
-      <p><h3>I think this is a great story for younger girls. I like how it not only inspires girls to reach for the things they didn’t know possible, but also tells them a lot bit about what the moon is like. </h3></p>
-      <p><h3>This is definitely a great way to get get girls interested in STEM fields from a young age. - Alli. B.</h3></p>
-      <hr>
+        <p><h3>I think this is a great story for younger girls. I like how it not only inspires girls to reach for the things they didn’t know possible, but also tells them a lot bit about what the moon is like. </h3></p>
+        <p><h3>This is definitely a great way to get get girls interested in STEM fields from a young age. - Alli. B.</h3></p>
+        <hr>
       </div>
 
       <div class="clearfix"></div>
@@ -117,15 +90,24 @@
 <div id="donate" >
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
+<<<<<<< HEAD
       <h2>Donate to <span>little</span>STEM Books!</h2>
       <%= link_to "Donate", "https://www.fracturedatlas.org/site/fiscal/profile?id=12967", class: "btn", target: "_blank" %>
+=======
+      <h2>Donate to <span>little</span>STEM Books</h2>
+      <%= link_to "Donate Here", "https://www.fracturedatlas.org/site/fiscal/profile?id=12967", class: "btn", target: "_blank" %>
+>>>>>>> separate-views
       <div class="clearfix"></div>
     </div>
   </div>
 </div>
 
 <!-- Buy our Book Section -->
+<<<<<<< HEAD
 <div id="contact-section" >
+=======
+<div id="buy-book" >
+>>>>>>> separate-views
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
       <h2>Get your copy of <i>Serena Sees</i> Here!</h2>
@@ -136,7 +118,11 @@
 </div>
 
 <!-- Buy our itunes Section -->
+<<<<<<< HEAD
 <div id="itunes" >
+=======
+<div id="iTunes" >
+>>>>>>> separate-views
   <div class="container">
     <div class="section-title text-center wow fadeInDown">
       <h2>Get it for 99 cents on <span>i</span>Tunes!</h2>
@@ -144,15 +130,5 @@
       <hr>
       <div class="clearfix"></div>
     </div>
-  </div>
-</div>
-
-
-<div id="footer" class="text-center">
-  <div class="container">
-    <%= link_to "Contact Us", "mailto:sean@agstem.org" %>
-    <p>Copyright &copy; 2016 littleSTEM Books, a 501(c)3 non-profit organization based in the U.S.A. All rights reserved.</p>
-
-    <p>FracturedAtlas handles donations-processing for over 58,000 arts-related projects, including <%= link_to "littleSTEM Books", "https://www.fracturedatlas.org/site/fiscal/profile?id=12967",target: "_blank" %>.</p>
   </div>
 </div>
