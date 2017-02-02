@@ -36,9 +36,13 @@ p {
   font-size: 20px;
 }
 
+.margin40 {
+  margin-top: 40px;
+}
 .btn, .buy-button {
   background: #ed3e44;
   border: 1px solid #fff;
+  border-radius: 9px;
   padding: 10px 20px;
   margin-top: 20px;
   margin-left: 0;
@@ -48,7 +52,6 @@ p {
 
 .buy-button:hover, .buy-button:focus, .btn:hover, .btn:focus {
   background: #ed3e44;
-  border: 2px solid #fff;
   font-size: 20px;
   color: #fff;
 }
@@ -57,14 +60,14 @@ p {
   background-color: transparent;
   border: 1px solid #fff;
   margin: 0 8px;
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 0;
 }
 .btn-donate:hover, .btn-donate:focus, {
   color: #383838;
-  border: 2px solid #fff;
+  font-size: 20px;
 }
 
 
@@ -87,7 +90,7 @@ a:focus {
 }
 
 .moon-home {
-  margin-top: 60px;
+  margin-top: 80px;
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -136,14 +139,14 @@ ul, ol {
 /* Navigation */
 #menu {
   padding: 20px;
-  transition: all 0.8s;
+  transition: all 0.5s;
 }
 #menu.navbar-default {
-  background-color: rgba(248, 248, 248, 0.5);
+  background-color: rgba(231, 231, 231,0.5);
   border-color: rgba(231, 231, 231, 0);
 }
 #menu a.navbar-brand {
-  color: 383838;
+  color: #383838;
   font-size: 22px;
   font-weight: 600;
   background-image: url("<%= asset_path('logo-icon.png') %>");
@@ -155,7 +158,7 @@ ul, ol {
 }
 #menu.navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 2px;
   font-weight: 900;
   color: 383838;
@@ -163,10 +166,12 @@ ul, ol {
 #menu.navbar-default .navbar-nav > li > a:hover {
   color: 383838;
 }
+
 .on {
   background-color: #fff !important;
   padding: 0 !important;
 }
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
 }
