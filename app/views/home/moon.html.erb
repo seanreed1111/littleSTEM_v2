@@ -1,14 +1,22 @@
-<div class="container">
-    <h1>Serena Sees Her Footprints on the Moon</h1>
-    <h2>By Sean Reed</h2>
-    <div class="book-image">
-        <div class="col-xs-12 col-sm-12 col-md-12  col-lg-12">
-          <%= image_tag "cover.jpg", class: "img-responsive center-block" %>
-        </div>
-        <div class="container">
-            <p class="center-block"><em>Serena Sees Her Footprints on the Moon</em> is about a young girl who imagines a fun trip to the Moon, where she plays with some of the objects left
-          behind up there by the Apollo astronauts.
-          </p>
-        </div>
+<div class="container moon-home page-header">
+  <h1>Serena Sees Her Footprints on the Moon</h1>
+  <h3>By Sean Reed and Sam Beck</h3>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <%= image_tag "cover.jpg" %>
     </div>
+    <div class="col-md-6 col-lg-6">
+          <p><em>Serena Sees Her Footprints on the Moon</em> shows a girl who imagines a fun trip to the Moon, where she plays with some of the objects left behind up there by the Apollo astronauts.
+        </p>
+      <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <p>Softcover, for ages 3-8</p>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <%= link_to "Buy", "https://gumroad.com/l/softcover", class: "buy-button", target: "_blank" %>
+          </div>
+      </div>
+    </div>
+  </div>
 </div>
