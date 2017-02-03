@@ -8,7 +8,8 @@ Rails.application.routes.draw do
 
   get '/google2a00eed5d1f4e4fe.html', to: 'google#google'
   get '/moon', to: 'home#moon', as: "moon"
-    get '/index', to: 'home#index', as: "home"
+    get '/home', to: 'home#index', as: "home"
+    get '/index', to: 'home#index', as: "index"
   get '/testimonials', to:'home#testimonials', as: 'testimonials'
   root 'home#moon'
 end
